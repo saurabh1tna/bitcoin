@@ -21,6 +21,14 @@ tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)"
 tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six"]
 
 [[package]]
+name = "chispa"
+version = "0.7.1"
+description = "Pyspark test helper library"
+category = "main"
+optional = false
+python-versions = ">2.7"
+
+[[package]]
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
@@ -131,7 +139,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "7b2c55d3d9db23d316713efa93ead0dfc9a9ce1785fc421de14471af5785d5d7"
+content-hash = "4d3d4d5ce378f9b1e3c4d4893ee66d39c8ed3ee64a5696bf2e53a7eb9b61437c"
 
 [metadata.files]
 atomicwrites = [
@@ -141,6 +149,10 @@ atomicwrites = [
 attrs = [
     {file = "attrs-20.3.0-py2.py3-none-any.whl", hash = "sha256:31b2eced602aa8423c2aea9c76a724617ed67cf9513173fd3a4f03e3a929c7e6"},
     {file = "attrs-20.3.0.tar.gz", hash = "sha256:832aa3cde19744e49938b91fea06d69ecb9e649c93ba974535d08ad92164f700"},
+]
+chispa = [
+    {file = "chispa-0.7.1-py2.py3-none-any.whl", hash = "sha256:722a98f1835bc10ad220f1e4c18ee117af72787e066c025c543c9c29d30a865d"},
+    {file = "chispa-0.7.1.tar.gz", hash = "sha256:54b82ddeb7df4dfb0031d670a94fab1c090d85ffc36a27ed53131d318bf0a6eb"},
 ]
 colorama = [
     {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},

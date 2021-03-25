@@ -16,7 +16,7 @@ def data_filter(df, column_name, value_list):
     :usage: data_filter(df, 'country', 'United Kingdom')
     """
     formatted_value_list = [x.strip() for x in value_list.split(',')]
-    df = df.filter(col(column_name).isin(formatted_value_list))
+    df = df.filter(df[column_name].isin(formatted_value_list))
     return df
 
 
