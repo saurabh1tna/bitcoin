@@ -5,17 +5,19 @@ from chispa.dataframe_comparer import *
 
 spark = SparkSession.builder.master("local").config(conf=SparkConf()).getOrCreate()
 
-testData = StructType([
-    StructField("id", StringType(), True),
-    StructField("country", StringType(), False)
-])
-testRow1 = Row("1", "Netherlands")
-testRow2 = Row("2", "Germany")
-testDf = spark.createDataFrame([testRow1, testRow2], testData)
 
-expectedRow = Row("1", "Netherlands")
-expectedDF = spark.createDataFrame([expectedRow], testData)
+def filter_check():
+    testData = StructType([
+        StructField("id", StringType(), True),
+        StructField("country", StringType(), False)
+    ])
+    testRow1 = Row("1", "Netherlands")
+    testRow2 = Row("2", "Germany")
+    testDf = spark.createDataFrame([testRow1, testRow2], testData)
 
-actualDF = data_filter(testDf, 'country', 'Netherlands')
+    expectedRow = Row("1", "Netherlands")
+    expectedDF = spark.createDataFrame([expectedRow], testData)
 
-assert_df_equality(actualDF, expectedDF)
+    actualDF = data_filter(testDf, 'country', 'Netherlands')
+
+    assert_df_equality(actualDF, expectedDF)
