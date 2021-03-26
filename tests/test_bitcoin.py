@@ -21,3 +21,6 @@ def filter_check():
     actualDF = data_filter(testDf, 'country', 'Netherlands')
 
     assert_df_equality(actualDF, expectedDF)
+
+
+filter_check()
