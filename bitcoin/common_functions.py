@@ -1,8 +1,13 @@
 from pyspark import SparkConf
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col
 import pyspark.sql.functions as F
 import os
+import sys
+import logging
+from logging.handlers import TimedRotatingFileHandler
+
+FORMATTER = logging.Formatter("%(asctime)s — %(name)s — %(levelname)s — %(message)s")
+LOG_FILE = os.path.dirname(os.getcwd()).replace('\\', '/')+'/logs/bitcoin.log'
 
 spark = SparkSession.builder.master("local").config(conf=SparkConf()).getOrCreate()
 
@@ -53,6 +58,29 @@ def check_file(file_path):
     file_exists = os.path.exists(file_path)
     if file_exists is True:
         file_name = os.path.basename(file_path)
-        return "File " + file_name + "Exists!"
+        return "File " + file_name + " exists!"
     else:
         return "File not found!"
+
+
+def get_console_handler():
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(FORMATTER)
+    return console_handler
+
+
+def get_file_handler():
+    file_handler = TimedRotatingFileHandler(LOG_FILE, when='m', backupCount=5)
+    file_handler.setFormatter(FORMATTER)
+    return file_handler
+
+
+def get_logger(logger_name):
+    logger = logging.getLogger(logger_name)
+    logger.setLevel(logging.DEBUG)
+    logger.addHandler(get_console_handler())
+    logger.addHandler(get_file_handler())
+
+    logger.propagate = False
+    return logger
+

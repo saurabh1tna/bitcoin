@@ -1,0 +1,20 @@
+2021-03-26 12:11:29,936 — Bitcoin Transformation — INFO — Application Started!
+2021-03-26 12:11:29,942 — Bitcoin Transformation — INFO — Dataset1: C:\Users\Skuma458\Downloads\AMRO\dataset_one.csv
+2021-03-26 12:11:29,942 — Bitcoin Transformation — INFO — Dataset2: C:\Users\Skuma458\Downloads\AMRO\dataset_two.csv
+2021-03-26 12:11:29,942 — Bitcoin Transformation — INFO — Country list: Netherlands, United Kingdom
+2021-03-26 12:11:29,948 — Bitcoin Transformation — INFO — File dataset_one.csv exists!
+2021-03-26 12:11:29,949 — Bitcoin Transformation — INFO — File dataset_two.csv exists!
+2021-03-26 12:11:36,472 — Bitcoin Transformation — INFO — Application completed. Check output file at path C:/Users/Skuma458/pythonProjects/bitcoin/client_data
+2021-03-26 12:12:15,075 — Bitcoin Transformation — INFO — Application Started!
+2021-03-26 12:12:15,076 — Bitcoin Transformation — INFO — Dataset1: C:\Users\Skuma458\Downloads\AMRO\dataset_one.csv
+2021-03-26 12:12:15,076 — Bitcoin Transformation — INFO — Dataset2: C:\Users\Skuma458\Downloads\AMRO\dataset_two.csv
+2021-03-26 12:12:15,076 — Bitcoin Transformation — INFO — Country list: Netherlands, United Kingdom
+2021-03-26 12:12:15,082 — Bitcoin Transformation — INFO — File dataset_one.csv exists!
+2021-03-26 12:12:15,082 — Bitcoin Transformation — INFO — File dataset_two.csv exists!
+2021-03-26 12:12:21,620 — Bitcoin Transformation — INFO — Application completed. Check output file at path C:/Users/Skuma458/pythonProjects/bitcoin/client_data
+2021-03-26 12:13:20,119 — Bitcoin Transformation — INFO — Application Started!
+2021-03-26 12:13:20,120 — Bitcoin Transformation — INFO — Dataset1: C:\Users\Skuma458\Downloads\AMRO\dataset_one.csv
+2021-03-26 12:13:20,120 — Bitcoin Transformation — INFO — Dataset2: C:\Users\Skuma458\Downloads\AMRO\dataset_two.csv
+2021-03-26 12:13:20,120 — Bitcoin Transformation — INFO — Country list: Netherlands, United Kingdom
+2021-03-26 12:13:20,127 — Bitcoin Transformation — INFO — File dataset_one.csv exists!
+2021-03-26 12:13:20,127 — Bitcoin Transformation — INFO — File dataset_two.csv exists!
