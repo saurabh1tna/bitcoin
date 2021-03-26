@@ -62,8 +62,10 @@ joinType = "inner"
 result = d1_select.join(d2_select, join_expression, joinType)
 
 formatted_results = rename_column(result, 'id, btc_a, cc_t, email, country', 'client_identifier, bitcoin_address, credit_card_type, email, country')
-target = 'client_data'
-target_dir = os.path.dirname(os.getcwd()).replace('\\', '/')+'/client_data'
+target_dir = 'client_data'
 formatted_results.write.format("csv").mode("overwrite").option("path", target_dir).option("header", "true").save()
 
 my_logger.info("Application completed. Check output file at path "+target_dir)
+
+print("Application completed. Check output file at path "+os.getcwd().replace('\\', '/')+"/"+target_dir)
+print("Log file at path "+os.getcwd().replace('\\', '/')+"/bitcoin.log")

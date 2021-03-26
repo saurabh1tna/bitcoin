@@ -7,7 +7,7 @@ import logging
 from logging.handlers import TimedRotatingFileHandler
 
 FORMATTER = logging.Formatter("%(asctime)s — %(name)s — %(levelname)s — %(message)s")
-LOG_FILE = os.path.dirname(os.getcwd()).replace('\\', '/')+'/logs/bitcoin.log'
+LOG_FILE = 'bitcoin.log'
 
 spark = SparkSession.builder.master("local").config(conf=SparkConf()).getOrCreate()
 
