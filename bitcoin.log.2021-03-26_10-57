@@ -1,0 +1,14 @@
+2021-03-26 10:57:41,765 — Bitcoin Transformation — INFO — Application Started!
+2021-03-26 10:57:41,772 — Bitcoin Transformation — INFO — Dataset1: C:\Users\Skuma458\Downloads\AMRO\dataset_one.csv
+2021-03-26 10:57:41,772 — Bitcoin Transformation — INFO — Dataset2: C:\Users\Skuma458\Downloads\AMRO\dataset_to.csv
+2021-03-26 10:57:41,772 — Bitcoin Transformation — INFO — Country list: Netherlands, United Kingdom
+2021-03-26 10:57:41,780 — Bitcoin Transformation — INFO — check_file function!
+2021-03-26 10:57:41,780 — Bitcoin Transformation — INFO — check_file function!
+2021-03-26 10:57:41,781 — Bitcoin Transformation — INFO — File dataset_one.csv exists!
+2021-03-26 10:57:41,781 — Bitcoin Transformation — INFO — File dataset_one.csv exists!
+2021-03-26 10:57:41,784 — Bitcoin Transformation — INFO — check_file function!
+2021-03-26 10:57:41,784 — Bitcoin Transformation — INFO — check_file function!
+2021-03-26 10:57:41,784 — Bitcoin Transformation — INFO — check_file function!
+2021-03-26 10:57:41,784 — Bitcoin Transformation — ERROR — File not found!
+2021-03-26 10:57:41,784 — Bitcoin Transformation — ERROR — File not found!
+2021-03-26 10:57:41,784 — Bitcoin Transformation — ERROR — File not found!
