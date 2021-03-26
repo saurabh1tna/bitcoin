@@ -18,7 +18,7 @@ def filter_check():
     expectedRow = Row("1", "Netherlands")
     expectedDF = spark.createDataFrame([expectedRow], testData)
 
-    actualDF = data_filter(testDf, 'country', 'Netherlands')
+    actualDF = data_filter(testDf, 'country', 'Netherlands, Germany')
 
     assert_df_equality(actualDF, expectedDF)
 
