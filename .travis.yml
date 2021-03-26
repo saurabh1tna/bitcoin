@@ -2,9 +2,6 @@ language: python
 python:
   - "3.9"
 install:
-  - pip install poetry
-before_deploy:
-  - poetry build
-deploy:
-  provider: script
-  script: poetry publish
+  - pip install -r requirements.txt
+script:
+  - pytest
