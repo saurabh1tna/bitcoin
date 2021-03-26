@@ -1,0 +1,5 @@
+2021-03-26 11:07:59,796 — Bitcoin Transformation — INFO — Application Started!
+2021-03-26 11:07:59,802 — Bitcoin Transformation — INFO — Dataset1: C:\Users\Skuma458\Downloads\AMRO\dataset_one.csv
+2021-03-26 11:07:59,802 — Bitcoin Transformation — INFO — Dataset2: C:\Users\Skuma458\Downloads\AMRO\dataset_to.csv
+2021-03-26 11:07:59,802 — Bitcoin Transformation — INFO — Country list: Netherlands, United Kingdom
+2021-03-26 11:07:59,807 — Bitcoin Transformation — INFO — File dataset_one.csvExists!
