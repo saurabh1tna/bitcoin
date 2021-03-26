@@ -3,5 +3,8 @@ python:
   - "3.9"
 install:
   - pip install poetry
-script:
-  - python /tests/test_bitcoin.py
+before_deploy:
+  - poetry build
+deploy:
+  provider: script
+  script: poetry publish
