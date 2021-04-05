@@ -35,6 +35,6 @@ def test_rename_column_check():
         (2, "q"),
         (3, "r"),
         (None, None)]
-    df2 = spark.createDataFrame(data2, ["num", "num2"])
-    actualDf = rename_column(df2, 'num,num2', 'num,letter')
+    df2 = spark.createDataFrame(data2, ["num1", "num2"])
+    actualDf = rename_column(df2, 'num1,num2', 'num,letter')
     assert_df_equality(actualDf, expectedDf)
