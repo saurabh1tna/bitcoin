@@ -23,4 +23,18 @@ def test_filter_check():
     assert_df_equality(actualDF, expectedDF)
 
 
-test_filter_check()
+def test_rename_column_check():
+    data1 = [
+        (1, "a"),
+        (2, "b"),
+        (3, "c"),
+        (None, None)]
+    expectedDf = spark.createDataFrame(data1, ["num", "letter"])
+    data2 = [
+        (1, 6),
+        (2, 7),
+        (3, 8),
+        (None, None)]
+    df2 = spark.createDataFrame(data2, ["num", "num2"])
+    actualDf = rename_column(df2, 'num,num2', 'num,letter')
+    assert_df_equality(actualDf, expectedDf)
