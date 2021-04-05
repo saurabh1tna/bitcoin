@@ -29,12 +29,13 @@ def test_rename_column_check():
         (2, "b"),
         (3, "c"),
         (None, None)]
-    expectedDf = spark.createDataFrame(data1, ["num", "letter"])
+    expectedDf = spark.createDataFrame(data1, ["num", "letter"]).printSchema()
     data2 = [
         (1, "p"),
         (2, "q"),
         (3, "r"),
         (None, None)]
     df2 = spark.createDataFrame(data2, ["num1", "num2"])
-    actualDf = rename_column(df2, 'num1,num2', 'num,letter')
-    assert_df_equality(actualDf, expectedDf)
+    df3 = rename_column(df2, 'num1,num2', 'num,letter')
+    actualDf=df3.printSchema()
+    assert_schema_equality(actualDf, expectedDf)
