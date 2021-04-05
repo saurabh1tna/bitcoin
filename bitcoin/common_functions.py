@@ -36,7 +36,7 @@ def rename_column(df, original_column, new_column):
     original_column_formatted = [x.strip() for x in original_column.split(',')]
     new_column_formatted = [x.strip() for x in new_column.split(',')]
     mapping = dict(zip(original_column_formatted, new_column_formatted))
-    df = df.select([F.col(x).alias(mapping.get(x, x)) for x in original_column_formatted])
+    df = df.select([df[x].alias(mapping.get(x, x)) for x in original_column_formatted])
     return df
 
 
