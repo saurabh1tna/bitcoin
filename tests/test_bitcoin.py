@@ -6,7 +6,7 @@ from chispa.dataframe_comparer import *
 spark = SparkSession.builder.master("local").config(conf=SparkConf()).getOrCreate()
 
 
-def filter_check():
+def test_filter_check():
     testData = StructType([
         StructField("id", StringType(), True),
         StructField("country", StringType(), False)
@@ -23,4 +23,4 @@ def filter_check():
     assert_df_equality(actualDF, expectedDF)
 
 
-filter_check()
+test_filter_check()
