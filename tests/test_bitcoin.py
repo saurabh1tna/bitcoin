@@ -31,9 +31,9 @@ def test_rename_column_check():
         (None, None)]
     expectedDf = spark.createDataFrame(data1, ["num", "letter"])
     data2 = [
-        (1, 6),
-        (2, 7),
-        (3, 8),
+        (1, "p"),
+        (2, "q"),
+        (3, "r"),
         (None, None)]
     df2 = spark.createDataFrame(data2, ["num", "num2"])
     actualDf = rename_column(df2, 'num,num2', 'num,letter')
